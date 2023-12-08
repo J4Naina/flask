@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+<p><b>Bem-vindo(a), {{ user_data['nome_usual'] }} </b></p>
+<div class="row">
+    <div class="col-6">
+        <img class="foto" src="https://suap.ifrn.edu.br{{ user_data['url_foto_150x200'] }}" alt="foto"> <br>
+        {% for field in user_data %}
+        <h3><b>{{ field }}</b>: {{ user_data[field] }} </h3>
+        {% endfor %}
+    </div>
+    <div class="change">
+        <p>Escolha o ano para <br>acessar seu boletim</p>
+            <div class="opcoes">
+                <h4><a href="{{ url_for('boletim',ano=2020) }}"><button class="btn1"> 1° ano</button></a></h4>
+                <h4><a href="{{ url_for('boletim',ano=2021) }}"><button class="btn2"> 2° ano</button></a></h4>
+                <h4><a href="{{ url_for('boletim',ano=2022) }}"><button class="btn3"> 3° ano</button></a></h4>
+                <h4><a href="{{ url_for('boletim',ano=2023) }}"><button class="btn4"> 4° ano</button></a></h4>
+            </div>
+    </div>
+</div>
+<div class="col-19">
+    <p><a href="{{ url_for('logout') }}"><button class="logout">logout</button></a></p>
+</div>
+{% endblock %}

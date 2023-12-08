@@ -1,0 +1,87 @@
+        body{
+            text-align: center;
+            font-family: 'Trebuchet MS';
+            font-size: 23px;
+            
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(96, 231, 148);
+        }
+
+        .conteudo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(96, 231, 148);
+        }
+
+        .card, .change {
+            width: 18rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+        }
+
+        .card img, .foto {
+            border-radius: 50%;
+            width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+            height: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+            object-fit: cover; /* Garante que a imagem mantenha a proporção e cubra completamente a área designada */
+            margin: 15px auto;
+        }
+
+        .button, .logout, .voltar {
+            background: linear-gradient(to right, #4CAF50, #74D04A);
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 2px solid #4CAF50;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+        }
+        
+        .button:hover, .logout:hover, .voltar:hover {
+            background: linear-gradient(to right, #45A049, #7BC141);
+            border: 2px solid #45A049;
+        }
+
+        .change {
+            background-color: #fff; /* Cor de fundo do card */
+            padding: 20px; /* Espaçamento interno do card */
+            border-radius: 8px; /* Curvatura das bordas do card */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do card */
+            max-width: 400px; /* Largura máxima do card */
+            width: 100%; /* Garante que o card se ajuste ao conteúdo interno */
+        }
+        
+        .opcoes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .btn1, .btn2, .btn3, .btn4 {
+            background: linear-gradient(to right, #4CAF50, #74D04A);
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: 2px solid #4CAF50;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+        }
+        
+        .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
+            background: linear-gradient(to right, #45A049, #7BC141);
+            border: 2px solid #45A049;
+        }
+        
